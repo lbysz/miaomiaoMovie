@@ -15,6 +15,11 @@
   // -moz-osx-font-smoothing: grayscale;
   // text-align: center;
   // color: #2c3e50;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: url("./assets/images/ch.gif") no-repeat;
+  background-size: 100% 100%;
 }
 
 #nav {

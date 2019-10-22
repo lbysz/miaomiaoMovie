@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 // import Home from "../views/Home.vue";
 import login from "../views/login/login.vue";
+import home from "../views/home/home.vue";
 
 Vue.use(VueRouter);
 
@@ -13,7 +14,8 @@ const routes = [
   //   component: () => import("../views/About.vue")
   // }
   { path: "/", redirect: "/login" },
-  { path: "/login", name: "login", component: login }
+  { path: "/login", name: "登录页", component: login },
+  { path: "/home", name: "首页", component: home }
 ];
 
 const router = new VueRouter({
