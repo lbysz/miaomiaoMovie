@@ -12,6 +12,19 @@ import City from "../components/City/index.vue";
 import CommingSoon from "../components/CommingSoon/index.vue";
 import Search from "../components/Search/index.vue";
 
+import axios from "axios";
+Vue.prototype.axios = axios;
+
+import Loading from "../components/Loading/index.vue";
+Vue.component("Loading", Loading);
+
+import Scroller from "../components/Scroller";
+Vue.component("Scroller", Scroller);
+
+Vue.filter("setWH", (url, arg) => {
+  return url.replace(/w\.h/, arg);
+});
+
 Vue.use(VueRouter);
 
 const routes = [
